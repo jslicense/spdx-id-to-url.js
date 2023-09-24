@@ -1,6 +1,6 @@
 {
   "name": "spdx-id-to-url",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "given an SPDX license ID, return a URL for the license",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/spdx-id-to-url.js",
