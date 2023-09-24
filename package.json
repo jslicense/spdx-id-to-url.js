@@ -20,6 +20,6 @@
     "pretest": "npm run build",
     "test": "npm run test:readme && npm run test:suite",
     "test:readme": "defence -i javascript < README.md | replace-require-self | node",
-    "test:suite": "node test.js"
+    "test:suite": "NODE_TLS_REJECT_UNAUTHORIZED=0 node test.js"
   }
 }
