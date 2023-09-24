@@ -50,5 +50,5 @@ NPOSL-3.0 https://opensource.org/license/nposl-3-0/
 OSL-1.0 https://opensource.org/license/osl-1-0/
 OSL-2.1 https://opensource.org/license/osl-2-1/
 OSL-3.0 https://opensource.org/license/osl-3-0-php/
-PolyForm-Noncommercial-1.0.0 https://polyformproject.org/licenses/noncommercial/1.0.0
-PolyForm-Small-Business-1.0.0 https://polyformproject.org/licenses/small-business/1.0.0
+PolyForm-Noncommercial-1.0.0 https://polyformproject.org/licenses/noncommercial/1.0.0/
+PolyForm-Small-Business-1.0.0 https://polyformproject.org/licenses/small-business/1.0.0/
