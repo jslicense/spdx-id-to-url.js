@@ -1,0 +1,25 @@
+{
+  "name": "spdx-id-to-url",
+  "version": "0.0.0",
+  "description": "given an SPDX license ID, return a URL for the license",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/spdx-id-to-url.js",
+  "license": "BlueOak-1.0.0",
+  "files": [
+    "index.js",
+    "mappings.json"
+  ],
+  "devDependencies": {
+    "defence-cli": "^3.0.1",
+    "replace-require-self": "^1.1.1",
+    "tape": "^5.7.0"
+  },
+  "scripts": {
+    "build": "./tojson < mappings.txt > mappings.json",
+    "prepublish": "npm run build",
+    "pretest": "npm run build",
+    "test": "npm run test:readme && npm run test:suite",
+    "test:readme": "defence -i javascript < README.md | replace-require-self | node",
+    "test:suite": "node test.js"
+  }
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+const chunks = []
+process.stdin
+  .on('data', chunk => { chunks.push(chunk) })
+  .once('error', error => {
+    console.error(error)
+    process.exit(1)
+  })
+  .once('end', () => {
+    const data = {}
+    for (const line of Buffer.concat(chunks).toString('utf8').split('\n')) {
+      if (line.length === 0 || line.startsWith('#')) continue
+      const [id, url] = line.split(' ')
+      data[id] = url
+    }
+    console.log(JSON.stringify(data, null, 2))
+  })
